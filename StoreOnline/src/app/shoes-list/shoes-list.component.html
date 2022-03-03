@@ -1,0 +1,9 @@
+<div class="tamanio">
+  <h2>ListadoCarga1</h2>
+  <div class="grid-container">
+    <div *ngFor="let shoe of shoes ; index as productId" >
+      <app-card-product [shoe]="shoe"></app-card-product>
+    </div>
+  </div>
+</div>
+<jjva-ngx-whatsapp-button [ngx_whatsapp_phone]="50244663995" [ngx_whatsapp_text]="products"></jjva-ngx-whatsapp-button>
