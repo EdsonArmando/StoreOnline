@@ -7,4 +7,5 @@ RUN npm install
 
 COPY . /src/app/
 
+EXPOSE 3010:3010
 CMD ["node", "src/index.js"]
