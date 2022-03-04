@@ -14,9 +14,9 @@ export const environment = {
     appId: "1:678264072851:web:a00e75450c25dfe5187b66",
     measurementId: "G-HDBEHZY8ML"
   },
-  API_MIDDLE: 'http://35.192.205.215:3010?api=',
-  API_SERVICIO: 'http://104.154.175.24:3004',
-  API_MICRO_SERVICIO: 'http://104.197.117.162:3005'
+  API_MIDDLE: 'http://34.66.18.127:3010?api=',
+  API_SERVICIO: 'http://34.66.2.31:3004',
+  API_MICRO_SERVICIO: 'http://34.133.122.163:3005'
 };
 
 /*
