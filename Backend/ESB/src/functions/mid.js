@@ -44,8 +44,8 @@ async function usuarios(req, res, next){
             let ruta = req.body.ruta;
             delete req.body.ruta
             let respuesta 
-
-            await fetch(ruta, { 
+            try{
+                await fetch(ruta, { 
                 method: 'POST', 
                 body: JSON.stringify(req.body),
                 headers: { 'Content-Type': 'application/json' } 
@@ -55,6 +55,10 @@ async function usuarios(req, res, next){
 
             res.send(respuesta)
             next();
+            }catch (e) {
+               // sentencias para manejar cualquier excepción
+               console.log(e); // pasa el objeto de la excepción al manejador de errores
+            }            
         }
     }
 } 
